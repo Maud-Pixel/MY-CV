@@ -1,0 +1,150 @@
+
+.container
+{
+    display: grid;
+    /* grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto; */
+    
+}
+.item1 {grid-area: header; }
+.item2 {grid-area: greyColor; }
+.item4 {grid-area: title; }
+.item5 {grid-area: object; }
+.item6 {grid-area: skills; }
+.item7 {grid-area: study; }
+.item8 {grid-area: formations; }
+.item9 {grid-area: languages; }
+.item10 {grid-area: experiences; }
+.item11 {grid-area: hobbies; }
+.item12 {grid-area: footer;}
+.item13 
+{
+    grid-area: header/footer;
+    z-index: 2; 
+    background-color:#47476b;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:  2% 20% 41% 35% 2%;
+    padding: 10px;
+    align-content: center;
+    grid-template-areas: 
+    ". header header header ."
+    ". greyColor title title ."
+    ". greyColor object skills ."
+    ". greyColor study skills ."
+    ". greyColor formations skills ."
+    ". greyColor formations languages ."
+    ". greyColor experiences experiences ."
+    ". greyColor hobbies hobbies ."
+    ". greyColor footer footer .";
+  }
+
+  .grid-container >* {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .grid-item1
+  {
+      grid-row : 1/4;
+  }
+
+  .grid-item5
+  {
+    grid-row : 1/4;
+    grid-column: 5;
+  }
+
+  .item1
+  {
+     height: 150px; 
+     background-color:#47476b;
+     display: flex;
+     flex-direction: row;
+  }
+
+  .item2
+  {
+      background-color:#47476b;
+  }
+
+  h1
+  {
+      color: #ff9999;
+      font-size: 40px;
+      text-align: left;
+      padding-left: 30px;
+  }
+
+  h2
+  {
+    color: #ff9999;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 30px;
+    
+  }
+
+  h3
+  {
+    color: #ff9999;
+    text-align: left;
+    
+  }
+  p
+  {
+    color: black;
+  }
+
+  .but
+  {
+    font-size: 30px; 
+    font-style: italic;
+  }
+
+  .school
+  {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 30px;
+    
+  }
+
+  ul
+  {
+    list-style: none;
+  }
+  li
+  {
+      text-align: left;
+  }
+
+  .photoMaud
+  {
+      border-radius: 400px;
+      width: 250px;
+      height: 250px;
+  }
+
+  .address
+  {
+      color:  #ffcc00;;
+      font-size: 20px;
+      text-align: center;
+      margin-left: 80%; 
+  }
+
+  .triangle
+  {
+      position: relative;
+  }
+
+  .linkedin, .facebook
+  {
+      width: 30px;
+      height: 30px;
+  }
